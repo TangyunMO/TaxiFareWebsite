@@ -3,7 +3,7 @@ import requests
 
 
 st.markdown('''
-# Let's Predict Your Taxi Fare in YNC
+# Let's Predict Your Taxi Fare in NYC 🏙
 ## with Our Wonderful Model
 ''')
 
@@ -35,7 +35,7 @@ params = {
 
 params_filled = pickup_datetime and pickup_longitude and pickup_latitude and dropoff_longitude and dropoff_latitude and passenger_count
 
-if st.button('Predict'):
+if st.button('Predict🚕'):
     if params_filled:
         res = requests.get(f"{url}predict", params=params).json()
 
